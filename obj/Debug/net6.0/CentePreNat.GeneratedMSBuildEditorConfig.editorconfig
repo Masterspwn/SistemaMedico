@@ -1,0 +1,148 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CentePreNat
+build_property.RootNamespace = CentePreNat
+build_property.ProjectDir = D:\Proyectos visual\CentePreNat\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Proyectos visual\CentePreNat
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Proyectos visual/CentePreNat/Views/Home/DatosPaciente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXRvc1BhY2llbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/Shared/_SlideBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TbGlkZUJhclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblDinamicafamiliars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRGluYW1pY2FmYW1pbGlhcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblDinamicafamiliars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRGluYW1pY2FmYW1pbGlhcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblDinamicafamiliars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRGluYW1pY2FmYW1pbGlhcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblDinamicafamiliars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRGluYW1pY2FmYW1pbGlhcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblDinamicafamiliars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRGluYW1pY2FmYW1pbGlhcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblFamiliares/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRmFtaWxpYXJlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblFamiliares/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRmFtaWxpYXJlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblFamiliares/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRmFtaWxpYXJlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblFamiliares/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRmFtaWxpYXJlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblFamiliares/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsRmFtaWxpYXJlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblInfoprenatals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsSW5mb3ByZW5hdGFsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblInfoprenatals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsSW5mb3ByZW5hdGFsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblInfoprenatals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsSW5mb3ByZW5hdGFsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblInfoprenatals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsSW5mb3ByZW5hdGFsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblInfoprenatals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsSW5mb3ByZW5hdGFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblInfoprenatals/Index2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsSW5mb3ByZW5hdGFsc1xJbmRleDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblPacientes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUGFjaWVudGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblPacientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUGFjaWVudGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblPacientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUGFjaWVudGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblPacientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUGFjaWVudGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblPacientes/GetIfoPrenat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUGFjaWVudGVzXEdldElmb1ByZW5hdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblPacientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUGFjaWVudGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/TblPacientes/ProfilePaciente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGJsUGFjaWVudGVzXFByb2ZpbGVQYWNpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyectos visual/CentePreNat/Views/Shared/_Layout - Copia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQgLSBDb3BpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-rap1ymezs2
+
+[D:/Proyectos visual/CentePreNat/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ffamgh4np4

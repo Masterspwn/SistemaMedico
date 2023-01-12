@@ -1,0 +1,45 @@
+﻿@model CentePreNat.Models.TblInfoprenatal
+
+@{
+    ViewData["Title"] = "ver Paciente";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PreNumeroEmbarazo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreEstadoEmocional)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreSaludMental)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreComplicaciones)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrePlanificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreAborto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreMotivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreHistorialClinicoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @Html.Partial("_DatosPaciente",new List<CentePreNat.Models.TblInfoprenatal>())
+    </tbody>
+</table>

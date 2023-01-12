@@ -1,0 +1,78 @@
+﻿@model IEnumerable<CentePreNat.Models.TblInfoprenatal>
+
+@{
+    ViewData["Title"] = "Nuevo Paciente";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PreNumeroEmbarazo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreEstadoEmocional)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreSaludMental)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreComplicaciones)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrePlanificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreAborto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreMotivo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreHistorialClinicoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreNumeroEmbarazo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreEstadoEmocional)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreSaludMental)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreComplicaciones)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrePlanificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreAborto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreMotivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreHistorialClinicoNavigation.PacHistorialClinico)
+            </td>
+            <td>
+                   
+               @* <a asp-action="Edit" asp-route-id="@item.PreIdInfo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PreIdInfo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PreIdInfo">Delete</a>*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

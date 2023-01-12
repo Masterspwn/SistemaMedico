@@ -1,0 +1,65 @@
+﻿@model IEnumerable<CentePreNat.Models.TblFamiliare>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FamParentesco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FamNombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FamEdad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FamProfesion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FamObservacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FamHistorialClinicoNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamParentesco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamNombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamEdad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamProfesion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamObservacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FamHistorialClinicoNavigation.PacHistorialClinico)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.FamIdFamiliar">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.FamIdFamiliar">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.FamIdFamiliar">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

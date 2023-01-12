@@ -1,0 +1,136 @@
+﻿@model IEnumerable<CentePreNat.Models.TblInfoprenatal>
+
+@{
+    ViewData["Title"] = "Nuevo Informacion Prenatal";
+    var idPac = ViewData["PacId"];
+
+}
+
+
+<div class="white-box ">
+        <div class="row">
+       @*    <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2">
+                   
+                    <a asp-action="Create" asp-controller="TblInfoprenatals" class="btn btn-warning" asp-route-id="@idPac"><i class="fa fas fa-plus"></i> @ViewData["Title"]</a>
+          
+                    </div>
+               
+                </div><br>
+            </div>*@
+
+   
+            <div id="verListPacientes">
+             
+                
+            @*    <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert-infoA">
+                            Listado Informacion Prenatal
+                            
+                          </div>
+                         
+                    </div>
+                </div>*@
+                <br>
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-9">
+                        <form id="frmBusquedaPaciente">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="txtSearch" name="txtSearch" placeholder="Buscar Paciente" autocomplete="off" onkeydown="Mayusculas(this)">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+              
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive m-t-10">
+
+                        <table class="table color-bordered-table info-bordered-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PreHistorialClinico)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PreNumeroEmbarazo)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PreEstadoEmocional)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PreSaludMental)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PreComplicaciones)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PrePlanificacion)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PreAborto)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PreMotivo)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.PreHistorialClinicoNavigation)
+                                    </th>
+                                 
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                         <td>
+                                            @Html.DisplayFor(modelItem => item.PreHistorialClinico)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PreNumeroEmbarazo)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PreEstadoEmocional)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PreSaludMental)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PreComplicaciones)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PrePlanificacion)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PreAborto)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PreMotivo)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.PreHistorialClinicoNavigation.PacHistorialClinico)
+                                        </td>
+                                                                            <td>
+                                            @* <a asp-action="ProfilePaciente" asp-controller="TblPacientes" asp-route-id="@item.PacHistorialClinico">Ver Detalles</a>
+                                           <button type="button" class="btn btn-info btn-outline btn-circle btn-lg m-r-5" data-toggle="tooltip" title="Editar" <i class="ti-pencil-alt"></i> </button>
+                                            <a asp-action="Edit" asp-route-id="@item.PacHistorialClinico" >Edit</a> |
+                                            <a asp-action="Details" asp-route-id="@item.PacHistorialClinico">Details</a> |
+                                            <a asp-action="Delete" asp-route-id="@item.PacHistorialClinico">Delete</a>*@
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+

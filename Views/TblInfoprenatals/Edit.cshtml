@@ -1,0 +1,69 @@
+﻿@model CentePreNat.Models.TblInfoprenatal
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TblInfoprenatal</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="PreHistorialClinico" class="control-label"></label>
+                <select asp-for="PreHistorialClinico" class="form-control" asp-items="ViewBag.PreHistorialClinico"></select>
+                <span asp-validation-for="PreHistorialClinico" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="PreIdInfo" />
+            <div class="form-group">
+                <label asp-for="PreNumeroEmbarazo" class="control-label"></label>
+                <input asp-for="PreNumeroEmbarazo" class="form-control" />
+                <span asp-validation-for="PreNumeroEmbarazo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreEstadoEmocional" class="control-label"></label>
+                <input asp-for="PreEstadoEmocional" class="form-control" />
+                <span asp-validation-for="PreEstadoEmocional" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreSaludMental" class="control-label"></label>
+                <input asp-for="PreSaludMental" class="form-control" />
+                <span asp-validation-for="PreSaludMental" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreComplicaciones" class="control-label"></label>
+                <input asp-for="PreComplicaciones" class="form-control" />
+                <span asp-validation-for="PreComplicaciones" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrePlanificacion" class="control-label"></label>
+                <input asp-for="PrePlanificacion" class="form-control" />
+                <span asp-validation-for="PrePlanificacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreAborto" class="control-label"></label>
+                <input asp-for="PreAborto" class="form-control" />
+                <span asp-validation-for="PreAborto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreMotivo" class="control-label"></label>
+                <input asp-for="PreMotivo" class="form-control" />
+                <span asp-validation-for="PreMotivo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,84 @@
+﻿@model CentePreNat.Models.TblPaciente
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TblPaciente</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacApellidos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacApellidos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacGenero)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacGenero)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacEdad)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacEdad)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacFnacimiento)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacFnacimiento)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacDireccion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacDireccion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacTelefono)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacTelefono)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacInstruccion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacInstruccion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacInstitucion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacInstitucion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacFinformacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacFinformacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PacFentregainforme)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PacFentregainforme)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.PacHistorialClinico">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

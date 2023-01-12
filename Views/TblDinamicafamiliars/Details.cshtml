@@ -1,0 +1,30 @@
+﻿@model CentePreNat.Models.TblDinamicafamiliar
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TblDinamicafamiliar</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DimTipoFamilia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DimTipoFamilia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DimHistorialClinicoNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DimHistorialClinicoNavigation.PacHistorialClinico)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.DimIdTipoFamilia">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

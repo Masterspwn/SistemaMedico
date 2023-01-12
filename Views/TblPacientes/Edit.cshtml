@@ -1,0 +1,86 @@
+﻿@model CentePreNat.Models.TblPaciente
+
+@{
+    ViewData["Title"] = "Edit";
+   
+}
+}
+
+<h1>Edit</h1>
+
+<h4>TblPaciente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PacHistorialClinico" />
+            <div class="form-group">
+                <label asp-for="PacApellidos" class="control-label"></label>
+                <input asp-for="PacApellidos" class="form-control" />
+                <span asp-validation-for="PacApellidos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacGenero" class="control-label"></label>
+                <input asp-for="PacGenero" class="form-control" />
+                <span asp-validation-for="PacGenero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacEdad" class="control-label"></label>
+                <input asp-for="PacEdad" class="form-control" />
+                <span asp-validation-for="PacEdad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacFnacimiento" class="control-label"></label>
+                <input asp-for="PacFnacimiento" class="form-control" />
+                <span asp-validation-for="PacFnacimiento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacDireccion" class="control-label"></label>
+                <input asp-for="PacDireccion" class="form-control" />
+                <span asp-validation-for="PacDireccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacTelefono" class="control-label"></label>
+                <input asp-for="PacTelefono" class="form-control" />
+                <span asp-validation-for="PacTelefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacInstruccion" class="control-label"></label>
+                <input asp-for="PacInstruccion" class="form-control" />
+                <span asp-validation-for="PacInstruccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacInstitucion" class="control-label"></label>
+                <input asp-for="PacInstitucion" class="form-control" />
+                <span asp-validation-for="PacInstitucion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacFinformacion" class="control-label"></label>
+                <input asp-for="PacFinformacion" class="form-control" />
+                <span asp-validation-for="PacFinformacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacEmail" class="control-label"></label>
+                <input asp-for="PacEmail" class="form-control" />
+                <span asp-validation-for="PacEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PacFentregainforme" class="control-label"></label>
+                <input asp-for="PacFentregainforme" class="form-control" />
+                <span asp-validation-for="PacFentregainforme" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

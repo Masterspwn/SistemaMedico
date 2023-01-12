@@ -1,0 +1,107 @@
+﻿@model CentePreNat.Models.TblPaciente
+
+@{
+    ViewData["Title"] = "PacienteInfo";
+    var id = ViewData["Pacienteid"];
+    var sb = ViewData["ShowButton"]= false;
+    var ss = ViewData["prenat"];
+}
+
+
+<div class="row">
+    <div class="col-md-4 col-xs-12">
+        <div class="white-box">
+            <div class="user-bg whith">
+                <img width="100%" alt="user" src="~/plugins/images/large/Doc1.jpg">
+                <div class="overlay-box">
+                    <div class="user-content">
+                        <a href="javascript:void(0)"><img src="~/plugins/images/users/UserDefault.jpg" class="thumb-lg img-circle" alt="img"></a>
+                        <h4 class="text-white"> @Html.DisplayFor(model => model.PacApellidos)</h4>
+                        <h5 class="text-white">@Html.DisplayFor(model => model.PacEmail)</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="user-btm-box">
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div data-icon="a" class="linea-icon linea-basic">
+                        <p> @Html.DisplayNameFor(model => model.PacEdad)</p>
+                        <h1>@Html.DisplayFor(model => model.PacEdad)</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div data-icon="&#xe025;" class="linea-icon linea-basic">
+                        <p> @Html.DisplayNameFor(model => model.PacGenero)</p>
+                        <h1>@Html.DisplayFor(model => model.PacGenero)</h1>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div data-icon="r" class="linea-icon linea-basic">
+                        <p> @Html.DisplayNameFor(model => model.PacFnacimiento)</p>
+                        <h4>@Html.DisplayFor(model => model.PacFnacimiento)</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 col-xs-12">
+        <div class="white-box">
+            <ul class="nav nav-tabs tabs customtab">
+                <li class="tab active">
+                    <a href="#home" data-toggle="tab" aria-expanded="true"> <span class="visible-xs"><i class="fa fa-home"></i></span> <span class="hidden-xs">Info Pre-Natal</span> </a>
+                </li>
+                <li class="tab">
+                    <a href="#profile" data-toggle="tab" aria-expanded="false"> <span class="visible-xs"><i class="fa fa-user"></i></span> <span class="hidden-xs">Info Familiares</span> </a>
+                </li>
+                <li class="tab">
+                    <a href="#messages" data-toggle="tab" aria-expanded="false"> <span class="visible-xs"><i class="fa fa-envelope-o"></i></span> <span class="hidden-xs">Modificar</span> </a>
+                </li>
+                @* <li class="tab">
+                <a href="#settings" data-toggle="tab" aria-expanded="false"> <span class="visible-xs"><i class="fa fa-cog"></i></span> <span class="hidden-xs">Settings</span> </a>
+                </li>*@
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="home">
+                    <div class="steamline">
+                        <!--  Vista Parcial de Datos Prenatal   -->
+                 @*       <partial name="~/views\tblinfoprenatals\index2.cshtml" />
+
+                 *@
+                       
+                        <partial name="GetIfoPrenat" for="TblInfoprenatals" data="CentePreNat.Models.TblInfoprenata" view-data="ss" />
+                        ------------------------------------
+                    
+                       @* @Html.Partial("~/views/tblinfoprenatals/Index2.cshtml",  Model.TblInfoprenatals);
+
+                        @Html.RenderPartialAsync("~/views/tblinfoprenatals/Index2.cshtml",Model.TblInfoprenatals,viewData: null);
+                        @Html.PartialAsync("TblInfoprenatals", "Index2")*@
+                       
+
+                        <!--     FIN -->
+
+                        <!-- Boton Redireccionar con #id a Index  -->
+                       <div class="col-lg-2 col-sm-4 col-xs-12">
+                            <a asp-action="Index2" asp-controller="TblInfoprenatals" asp-route-id="@id" class="btn btn-block btn-info">Agregar Nuevo</a>
+                        </div>
+                        <!--   Fin   -->
+                    </div>
+                </div>
+                <div class="tab-pane" id="profile">
+                    <div class="steamline">
+                        <a asp-action="Index" asp-controller="TblFamiliares" asp-route-id="@id" class="btn btn-block btn-info">Agregar Nuevo</a>
+                    </div>
+                </div>
+                <div class="tab-pane" id="messages">
+                    <div class="steamline">
+                        <partial name="Create" />
+                    </div>
+                </div>
+                <div class="tab-pane" id="settings">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,59 @@
+﻿@model CentePreNat.Models.TblFamiliare
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TblFamiliare</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FamHistorialClinico" class="control-label"></label>
+                <select asp-for="FamHistorialClinico" class="form-control" asp-items="ViewBag.FamHistorialClinico"></select>
+                <span asp-validation-for="FamHistorialClinico" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="FamIdFamiliar" />
+            <div class="form-group">
+                <label asp-for="FamParentesco" class="control-label"></label>
+                <input asp-for="FamParentesco" class="form-control" />
+                <span asp-validation-for="FamParentesco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FamNombre" class="control-label"></label>
+                <input asp-for="FamNombre" class="form-control" />
+                <span asp-validation-for="FamNombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FamEdad" class="control-label"></label>
+                <input asp-for="FamEdad" class="form-control" />
+                <span asp-validation-for="FamEdad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FamProfesion" class="control-label"></label>
+                <input asp-for="FamProfesion" class="form-control" />
+                <span asp-validation-for="FamProfesion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FamObservacion" class="control-label"></label>
+                <input asp-for="FamObservacion" class="form-control" />
+                <span asp-validation-for="FamObservacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

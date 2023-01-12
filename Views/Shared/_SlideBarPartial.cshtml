@@ -1,0 +1,54 @@
+﻿<div class="navbar-default sidebar" role="navigation" style="overflow: visible;">
+    <div class="slimScrollDiv" style="position: relative; overflow: visible; width: auto; height: 100%;">
+        <div class="sidebar-nav slimscrollsidebar" style="overflow: visible hidden; width: auto; height: 100%;">
+            <div class="sidebar-head">
+                <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Menú</span></h3>
+            </div>
+            <div class="user-profile">
+            </div>
+            <ul class="nav" id="side-menu">
+
+                <li class="active">
+                    <a href="index.html" class="waves-effect active"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu"> Inicio <span class="fa arrow"></span> </span></a>
+                    <ul class="nav nav-second-level collapse in">
+                        <li> <a href="Inicio.php" class="active"><i class="fa fa-child fa-fw"></i><span class="hide-menu">Noticias</span></a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect"><i class="ti-settings fa-fw"></i> <span class="hide-menu">Configuración<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a href="Usuario.php"><i data-icon="" class="icon-people fa-fw"></i> <span class="hide-menu"> Usuarios</span></a>
+                        </li>
+                        <li>
+                            <a href="Sucursal.php"><i class="ti-layout-menu fa-fw"></i> <span class="hide-menu">Sucursal</span></a>
+                        </li>
+                        <li>
+                            <a href="Modulo.php"><i class="ti-layers-alt fa-fw"></i> <span class="hide-menu">Módulo</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect"><i class="fa fa-plus-square fa-fw"></i> <span class="hide-menu">Pacientes<span class="fa arrow"></span></span></a>
+                    <ul class="nav nav-second-level collapse">
+                       
+                        <li>
+                            <a asp-area="" asp-controller="TblPacientes" asp-action="Index"><i class="ti-layout-width-default fa-fw"></i> <span class="hide-menu">Registro </span></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li>
+                    <a href="controller/UsuarioController.php?op=Cerrar" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">Salir</span></a>
+                </li>
+                <li class="devider"></li>
+                <li>
+                    <a href="#" class="waves-effect"><i class="fa fa-circle-o text-danger"></i> <span class="hide-menu">Acerca de</span></a>
+                </li>
+
+            </ul>
+        </div><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.3); width: 6px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 619px;"></div><div class="slimScrollRail" style="width: 6px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+    </div>
+</div>

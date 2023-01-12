@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentePreNat", "CentePreNat.csproj", "{D734B21B-0BC6-44E8-87E1-32DDBED0F075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D734B21B-0BC6-44E8-87E1-32DDBED0F075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D734B21B-0BC6-44E8-87E1-32DDBED0F075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D734B21B-0BC6-44E8-87E1-32DDBED0F075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D734B21B-0BC6-44E8-87E1-32DDBED0F075}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {908F881D-19A7-4586-BE49-5620680CEDB3}
+	EndGlobalSection
+EndGlobal

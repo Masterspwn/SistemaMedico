@@ -1,0 +1,66 @@
+﻿@model CentePreNat.Models.TblInfoprenatal
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TblInfoprenatal</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreNumeroEmbarazo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreNumeroEmbarazo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreEstadoEmocional)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreEstadoEmocional)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreSaludMental)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreSaludMental)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreComplicaciones)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreComplicaciones)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PrePlanificacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PrePlanificacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreAborto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreAborto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreMotivo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreMotivo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreHistorialClinicoNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreHistorialClinicoNavigation.PacHistorialClinico)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.PreIdInfo">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
